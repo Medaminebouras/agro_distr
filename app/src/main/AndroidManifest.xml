@@ -12,6 +12,9 @@
         android:theme="@style/Theme.Projet"
         tools:targetApi="31">
         <activity
+            android:name=".Inscription_client"
+            android:exported="false" />
+        <activity
             android:name=".homapage"
             android:exported="false" />
         <activity
