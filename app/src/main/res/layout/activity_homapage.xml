@@ -299,7 +299,7 @@
         app:cardElevation="8dp"
         app:layout_constraintBottom_toBottomOf="@+id/cardView5"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.88"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toEndOf="@+id/cardView2"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0">
@@ -310,11 +310,6 @@
             android:layout_gravity="center_horizontal|center_vertical"
             android:gravity="center"
             android:orientation="vertical">
-
-            <ImageView
-                android:layout_width="78dp"
-                android:layout_height="73dp"
-                android:src="@drawable/commande_removebg_preview" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -374,6 +369,13 @@
         </LinearLayout>
 
     </androidx.cardview.widget.CardView>
+
+    <ImageView
+        android:layout_width="78dp"
+        android:layout_height="73dp"
+        android:src="@drawable/commande_removebg_preview"
+        tools:layout_editor_absoluteX="258dp"
+        tools:layout_editor_absoluteY="227dp" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
