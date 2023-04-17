@@ -14,9 +14,10 @@
         android:background="@color/primarycolor"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
     <TextView
         android:id="@+id/textView"
-        android:layout_width="205dp"
+        android:layout_width="232dp"
         android:layout_height="81dp"
         android:text="Connexion"
         android:textColor="#FFFFFF"
@@ -76,6 +77,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/TextName" />
+
     <Button
         android:id="@+id/button_con"
         android:layout_width="0dp"
@@ -85,7 +87,9 @@
         android:layout_marginEnd="32dp"
         android:background="@drawable/round_pb"
         android:gravity="center"
+        android:outlineAmbientShadowColor="@color/primarycolor"
         android:text="Se connecter"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/TextPassword" />
