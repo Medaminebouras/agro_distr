@@ -12,6 +12,15 @@
         android:theme="@style/Theme.Projet"
         tools:targetApi="31">
         <activity
+            android:name=".superviseur"
+            android:exported="false" />
+        <activity
+            android:name=".chercherclient"
+            android:exported="false" />
+        <activity
+            android:name=".clientgenerale"
+            android:exported="false" />
+        <activity
             android:name=".passsuperviseur"
             android:exported="false" />
         <activity

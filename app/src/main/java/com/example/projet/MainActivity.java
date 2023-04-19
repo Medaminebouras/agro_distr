@@ -29,11 +29,11 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                openhomepage();
+
                 String nom = t.getText().toString();
                 if (!nom.equals("")) {
                     Toast.makeText(getApplicationContext(), "Bienvenue " + nom, Toast.LENGTH_LONG).show();
-
+                    openhomepage();
                 } else {
                     Toast.makeText(getApplicationContext(), "nom est obligatoire", Toast.LENGTH_LONG).show();
                 }
@@ -44,4 +44,5 @@ public class MainActivity extends AppCompatActivity {
         Intent intent= new Intent(this,homapage.class);
         startActivity(intent);
     }
+
 }

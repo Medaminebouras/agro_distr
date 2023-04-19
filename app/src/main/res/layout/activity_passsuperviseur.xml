@@ -11,41 +11,47 @@
         android:id="@+id/textView14"
         android:layout_width="285dp"
         android:layout_height="47dp"
+        android:layout_marginBottom="72dp"
         android:text="Superviseur"
         android:textAlignment="center"
         android:textColor="#043B67"
         android:textSize="25dp"
         android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/textView16"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteY="288dp" />
+        tools:ignore="MissingConstraints" />
 
     <EditText
         android:id="@+id/editTextTextPassword2"
         android:layout_width="249dp"
         android:layout_height="45dp"
+        android:layout_marginBottom="20dp"
         android:ems="10"
+        android:hint="mot de passe"
         android:inputType="textPassword"
-        android:text="Password"
         android:textAlignment="center"
         android:textColorHighlight="#0000"
-        android:textSize="30dp"
-        android:textStyle="bold"
+        android:textSize="20sp"
+        android:textStyle="normal"
+        app:layout_constraintBottom_toTopOf="@+id/textView16"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        tools:ignore="MissingConstraints,SpeakableTextPresentCheck,TouchTargetSizeCheck"
-        tools:layout_editor_absoluteY="354dp" />
+        app:layout_constraintTop_toBottomOf="@+id/textView14"
+        app:layout_constraintVertical_bias="1.0"
+        tools:ignore="MissingConstraints,SpeakableTextPresentCheck,TouchTargetSizeCheck" />
 
     <ImageView
         android:id="@+id/imageView8"
         android:layout_width="209dp"
         android:layout_height="113dp"
+        app:layout_constraintBottom_toTopOf="@+id/textView14"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.842"
         app:srcCompat="@drawable/admin_removebg_preview"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteY="175dp" />
+        tools:ignore="MissingConstraints" />
 
     <Button
         android:id="@+id/button3"
@@ -53,11 +59,13 @@
         android:layout_height="59dp"
         android:background="@drawable/background_buttn"
         android:text="Confirmer"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.484"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteY="456dp" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.686"
+        tools:ignore="MissingConstraints" />
 
     <TextView
         android:id="@+id/textView16"
@@ -66,9 +74,11 @@
         android:text="Mot passe oublie?"
         android:textSize="17dp"
         android:textStyle="normal|bold|italic"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="415dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.605"
         tools:ignore="MissingConstraints" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
