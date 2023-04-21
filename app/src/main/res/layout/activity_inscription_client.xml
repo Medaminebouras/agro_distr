@@ -66,6 +66,7 @@
                     />
 
                 <EditText
+                    android:id="@+id/code"
                     android:layout_width="match_parent"
                     android:layout_height="50dp"
                     android:layout_marginTop="8dp"
@@ -73,14 +74,13 @@
                     android:ems="10"
                     android:gravity="center"
                     android:hint="Entrez le code"
-                    android:inputType="textPersonName"
 
+                    android:inputType="textPersonName"
                     android:textAlignment="center"
                     android:textColor="#0099dd"
-                    android:textSize="16sp"
 
 
-                    />
+                    android:textSize="16sp" />
             </LinearLayout>
 
             <LinearLayout
@@ -106,6 +106,7 @@
                     />
 
                 <EditText
+                    android:id="@+id/name"
                     android:layout_width="match_parent"
                     android:layout_height="50dp"
                     android:layout_marginTop="8dp"
@@ -115,12 +116,11 @@
                     android:hint="Entrez le nom"
                     android:inputType="textPersonName"
                     android:textAlignment="center"
+
                     android:textColor="#0099dd"
 
-                    android:textSize="16sp"
 
-
-                    />
+                    android:textSize="16sp" />
 
             </LinearLayout>
 
@@ -146,6 +146,7 @@
                     />
 
                 <EditText
+                    android:id="@+id/adresse"
                     android:layout_width="match_parent"
                     android:layout_height="50dp"
                     android:layout_marginTop="8dp"
@@ -155,12 +156,11 @@
                     android:hint="Entrez l'adresse"
                     android:inputType="textPersonName"
                     android:textAlignment="center"
+
                     android:textColor="#0099dd"
 
-                    android:textSize="16sp"
 
-
-                    />
+                    android:textSize="16sp" />
 
             </LinearLayout>
 
@@ -186,7 +186,7 @@
                     />
 
                 <EditText
-                    android:id="@+id/editTextTextPersonName"
+                    android:id="@+id/contact"
                     android:layout_width="match_parent"
                     android:layout_height="50dp"
                     android:layout_marginTop="8dp"
