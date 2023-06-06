@@ -142,7 +142,7 @@
                         android:id="@+id/textView78"
                         android:layout_width="116dp"
                         android:layout_height="53dp"
-                        android:text="Suivi"
+                        android:text="Modifier Client"
 
                         android:textAlignment="center"
                         android:textColor="#0099ff"

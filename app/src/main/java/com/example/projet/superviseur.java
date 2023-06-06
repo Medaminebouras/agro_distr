@@ -8,7 +8,8 @@ import android.view.View;
 import android.widget.ImageView;
 
 public class superviseur extends AppCompatActivity {
-    ImageView imageView11 , imageView12;
+    ImageView imageView11 , imageView12 , ImageView14 , imageView7;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -16,6 +17,8 @@ public class superviseur extends AppCompatActivity {
         setContentView(R.layout.activity_superviseur);
         imageView11 = findViewById(R.id.imageView11);
         imageView12 = findViewById(R.id.imageView12);
+        ImageView14 = findViewById(R.id.imageView14);
+        imageView7 = findViewById(R.id.imageView7);
         imageView11.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -29,6 +32,22 @@ public class superviseur extends AppCompatActivity {
                 cherchervendeur();
             }
         });
+        ImageView14.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                modifierclient();
+            }
+        });
+        imageView7.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                camion();
+            }
+        });
+    }
+    public  void modifierclient(){
+        Intent intent= new Intent(this, modifierclient.class);
+        startActivity(intent);
     }
 
     public void vendeur(){
@@ -38,6 +57,10 @@ public class superviseur extends AppCompatActivity {
 
     public void cherchervendeur(){
         Intent intent= new Intent(this, cherchervendeur.class);
+        startActivity(intent);
+    }
+    public void camion(){
+        Intent intent= new Intent(this, camion.class);
         startActivity(intent);
     }
 }
