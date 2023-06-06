@@ -31,9 +31,9 @@ public class Inscription_client extends AppCompatActivity {
         setContentView(R.layout.activity_inscription_client);
         codeEditText = findViewById(R.id.code);
         nameEditText = findViewById(R.id.name);
-        adresseEditText = findViewById(R.id.adresse);
+        adresseEditText = findViewById(R.id.adressetext);
        contactEditText = findViewById(R.id.contact);
-        insertButton = findViewById(R.id.button2);
+        insertButton = findViewById(R.id.buttonsearch);
         insertButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
