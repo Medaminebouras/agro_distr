@@ -243,7 +243,7 @@
                         android:id="@+id/textVie"
                         android:layout_width="116dp"
                         android:layout_height="53dp"
-                        android:text="Nouveau Client"
+                        android:text="chercher vendeur"
 
                         android:textAlignment="center"
                         android:textColor="#0099ff"

@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".chercherclient">
+    tools:context=".addvendeur">
+
     <ScrollView
         android:id="@+id/scrollView2"
         android:layout_width="match_parent"
@@ -32,7 +33,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:gravity="center"
-                android:text="chercher un client"
+                android:text="Ajouter vendeur"
 
                 android:textAlignment="center"
                 android:textColor="#0099dd"
@@ -56,7 +57,7 @@
                     android:id="@+id/textView6"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Code Client"
+                    android:text="matricule"
                     android:textAlignment="center"
                     android:textColor="#0099dd"
                     android:textSize="18sp"
@@ -65,14 +66,14 @@
                     />
 
                 <EditText
-                    android:id="@+id/codetext"
+                    android:id="@+id/matricule"
                     android:layout_width="match_parent"
                     android:layout_height="50dp"
                     android:layout_marginTop="8dp"
                     android:background="@drawable/background_text"
                     android:ems="10"
                     android:gravity="center"
-                    android:hint="Entrez le code"
+                    android:hint="Entrez le matricule"
 
                     android:inputType="textPersonName"
                     android:textAlignment="center"
@@ -96,7 +97,7 @@
                     android:id="@+id/textView7"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Nom Client"
+                    android:text="Nom "
                     android:textAlignment="center"
                     android:textColor="#0099dd"
                     android:textSize="18sp"
@@ -105,14 +106,14 @@
                     />
 
                 <EditText
-                    android:id="@+id/nomtext"
+                    android:id="@+id/name"
                     android:layout_width="match_parent"
                     android:layout_height="50dp"
                     android:layout_marginTop="8dp"
                     android:background="@drawable/background_text"
                     android:ems="10"
-
                     android:gravity="center"
+                    android:hint="Entrez le nom"
                     android:inputType="textPersonName"
                     android:textAlignment="center"
 
@@ -137,22 +138,22 @@
                     android:id="@+id/textView9"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text=" Adresse"
+                    android:text=" Password"
+                    android:textAlignment="center"
                     android:textColor="#0099dd"
                     android:textSize="18sp"
-                    android:textAlignment="center"
 
                     />
 
                 <EditText
-                    android:id="@+id/adressetext"
+                    android:id="@+id/password"
                     android:layout_width="match_parent"
                     android:layout_height="50dp"
                     android:layout_marginTop="8dp"
                     android:background="@drawable/background_text"
                     android:ems="10"
-
                     android:gravity="center"
+                    android:hint="Entrez password"
                     android:inputType="textPersonName"
                     android:textAlignment="center"
 
@@ -185,14 +186,14 @@
                     />
 
                 <EditText
-                    android:id="@+id/contactadresse"
+                    android:id="@+id/contact"
                     android:layout_width="match_parent"
                     android:layout_height="50dp"
                     android:layout_marginTop="8dp"
                     android:background="@drawable/background_text"
                     android:ems="10"
                     android:gravity="center"
-
+                    android:hint="06********"
                     android:inputType="textPersonName"
                     android:textAlignment="center"
                     android:textColor="#0099dd"
@@ -209,13 +210,13 @@
 
     <Button
         android:id="@+id/buttonsearch"
-        android:layout_width="129dp"
-        android:layout_height="47dp"
+        android:layout_width="120dp"
+        android:layout_height="50dp"
         android:layout_marginStart="400dp"
         android:layout_marginTop="650dp"
         android:background="@drawable/background_buttn"
         android:gravity="center"
-        android:text="Chercher"
+        android:text="Ajouter"
         android:textColor="#ffff"
         android:textStyle="bold"
         app:layout_constraintEnd_toStartOf="@+id/scrollView2"

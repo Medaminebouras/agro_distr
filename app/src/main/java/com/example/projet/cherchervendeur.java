@@ -16,36 +16,34 @@ import java.io.OutputStream;
 import java.net.HttpURLConnection;
 import java.net.URL;
 
-public class chercherclient extends AppCompatActivity {
-    EditText codeText, nomText, adressText, contactText;
+public class cherchervendeur extends AppCompatActivity {
+    EditText matriculeText, nomText, passwordText, contactText;
     Button searchButton;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_chercherclient);
+        setContentView(R.layout.activity_cherchervendeur);
 
-        codeText = findViewById(R.id.codetext);
-        nomText = findViewById(R.id.nomtext);
-        adressText = findViewById(R.id.adressetext);
-        contactText = findViewById(R.id.contactadresse);
-        searchButton = findViewById(R.id.buttonsearch);
+            matriculeText = findViewById(R.id.codetext);
+            nomText = findViewById(R.id.nomtext);
+            passwordText = findViewById(R.id.adressetext);
+            contactText = findViewById(R.id.contactadresse);
+            searchButton = findViewById(R.id.buttonsearch);
 
-        searchButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                String code = codeText.getText().toString();
-                new SearchClientTask().execute(code);
-            }
-        });
-    }
-
-    private class SearchClientTask extends AsyncTask<String, Void, String> {
+            searchButton.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    String code = matriculeText.getText().toString();
+                    new SearchvendeurTask().execute(code);
+                }
+            });
+        }
+    private class SearchvendeurTask extends AsyncTask<String, Void, String> {
 
         @Override
         protected String doInBackground(String... params) {
             String code = params[0];
-            String phpScriptUrl = "http://10.0.2.2/exam/chercherclient"; // Replace with your actual PHP script URL
+            String phpScriptUrl = "http://10.0.2.2/exam/cherchervendeur"; // Replace with your actual PHP script URL
 
             try {
                 URL url = new URL(phpScriptUrl);
@@ -56,7 +54,8 @@ public class chercherclient extends AppCompatActivity {
                 connection.setDoOutput(true);
 
                 // Build the request parameters
-                String parameters = "code=" + code;
+                String parameters = "matricule=" + code;
+
 
                 // Send the request
                 OutputStream outputStream = connection.getOutputStream();
@@ -81,12 +80,12 @@ public class chercherclient extends AppCompatActivity {
                     String[] parts = responseString.split(";");
                     if (parts.length == 3) {
                         String name = parts[0];
-                        String adress = parts[1];
+                        String password = parts[1];
                         String contact = parts[2];
 
-                        return name + ";" + adress + ";" + contact;
+                        return name + ";" + password + ";" + contact;
                     } else {
-                        return "Client not found";
+                        return "vendeur not found";
                     }
                 } else {
                     return "HTTP error: " + responseCode;
@@ -102,23 +101,21 @@ public class chercherclient extends AppCompatActivity {
         protected void onPostExecute(String result) {
             // Handle the result
             if (result.startsWith("Error:")) {
-                Toast.makeText(chercherclient.this, result, Toast.LENGTH_SHORT).show();
+                Toast.makeText(cherchervendeur.this, result, Toast.LENGTH_SHORT).show();
             } else {
                 String[] parts = result.split(";");
                 if (parts.length == 3) {
                     String name = parts[0];
-                    String adress = parts[1];
+                    String password = parts[1];
                     String contact = parts[2];
 
                     nomText.setText(name);
-                    adressText.setText(adress);
+                    passwordText.setText(password);
                     contactText.setText(contact);
                 } else {
-                    Toast.makeText(chercherclient.this, result, Toast.LENGTH_SHORT).show();
+                    Toast.makeText(cherchervendeur.this, result, Toast.LENGTH_SHORT).show();
                 }
             }
         }
     }
-
-
 }
