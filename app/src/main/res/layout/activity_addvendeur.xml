@@ -57,7 +57,7 @@
                     android:id="@+id/textView6"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="matricule"
+                    android:text="Matricule"
                     android:textAlignment="center"
                     android:textColor="#0099dd"
                     android:textSize="18sp"

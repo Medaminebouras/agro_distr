@@ -15,6 +15,9 @@
         android:theme="@style/Theme.Projet"
         tools:targetApi="31">
         <activity
+            android:name=".Commander"
+            android:exported="false" />
+        <activity
             android:name=".cherchervendeur"
             android:exported="false" />
         <activity

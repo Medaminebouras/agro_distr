@@ -41,7 +41,8 @@
         android:layout_height="469dp"
         android:background="@drawable/lightt_btn_background"
         app:layout_constraintBottom_toBottomOf="parent"
-        tools:layout_editor_absoluteX="-3dp">
+        tools:layout_editor_absoluteX="-3dp"
+        tools:ignore="MissingConstraints">
 
         <TableLayout
             android:layout_width="413dp"
