@@ -18,7 +18,7 @@ public class homapage extends AppCompatActivity {
     Button incr;
     CardView CardView;
     CardView CardView2;
-    CardView CardView4;
+    CardView CardView4 , cardview555;
     DrawerLayout drawerLayout;
     NavigationView navigationView;
     Toolbar toolbar;
@@ -35,6 +35,7 @@ public class homapage extends AppCompatActivity {
         CardView  = findViewById(R.id.cardView);
         CardView2 = findViewById(R.id.cardView2);
         CardView4 = findViewById(R.id.cardView4);
+        cardview555 = findViewById(R.id.cardview555);
         progress_bar.setProgress(0);
         incr.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -53,6 +54,10 @@ public class homapage extends AppCompatActivity {
             public void onClick(View v) {
                 openpasssuperviseur();
             }
+        });
+        cardview555.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) { stock();}
         });
 
         CardView.setOnClickListener(new View.OnClickListener() {
@@ -78,6 +83,10 @@ public class homapage extends AppCompatActivity {
     }
     public void openpasssuperviseur(){
         Intent intent= new Intent(this, passsuperviseur.class);
+        startActivity(intent);
+    }
+    public void stock(){
+        Intent intent= new Intent(this, stockgenerale.class);
         startActivity(intent);
     }
 }

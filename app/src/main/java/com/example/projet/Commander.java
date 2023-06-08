@@ -9,6 +9,6 @@ public class Commander extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_commander);
+        setContentView(R.layout.commander);
     }
 }

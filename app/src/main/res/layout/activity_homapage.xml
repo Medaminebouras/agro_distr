@@ -83,6 +83,7 @@
         tools:layout_editor_absoluteY="105dp" />
 
     <androidx.cardview.widget.CardView
+        android:id="@+id/cardview555"
         android:layout_width="160dp"
         android:layout_height="132dp"
         android:layout_rowWeight="1"
@@ -92,9 +93,9 @@
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
         android:layout_marginStart="24dp"
+
+
         android:layout_marginTop="35dp"
-
-
         android:layout_marginBottom="32dp"
         android:foregroundGravity="fill"
         app:cardCornerRadius="14dp"
