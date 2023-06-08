@@ -15,7 +15,13 @@
         android:theme="@style/Theme.Projet"
         tools:targetApi="31">
         <activity
-            android:name=".Commander"
+            android:name=".command"
+            android:exported="false" />
+        <activity
+            android:name=".camion"
+            android:exported="false" />
+        <activity
+            android:name=".modifierclient"
             android:exported="false" />
         <activity
             android:name=".cherchervendeur"
