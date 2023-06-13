@@ -173,7 +173,7 @@
         android:layout_height="48dp"
         android:background="@drawable/background_text"
         android:ems="10"
-        android:hint=""
+        android:hint="entrez le mtricule"
 
         android:inputType="textPersonName"
         android:textAlignment="center"
