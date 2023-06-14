@@ -295,14 +295,15 @@
             android:orientation="vertical">
 
             <ImageView
+                android:id="@+id/CardView4444"
                 android:layout_width="78dp"
                 android:layout_height="73dp"
-                android:src="@drawable/settings_24" />
+                android:src="@drawable/whatsapp_image_2023_04_18_at_18_19_42_removebg_preview" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Parametres"
+                android:text="Déconnecter"
                 android:textAlignment="center"
                 android:textColor="@color/primarycolor"
                 android:textStyle="bold" />
