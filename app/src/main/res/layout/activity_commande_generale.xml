@@ -79,8 +79,8 @@
 
                         <ImageView
                             android:id="@+id/imageView7"
-                            android:layout_width="65dp"
-                            android:layout_height="63dp"
+                            android:layout_width="94dp"
+                            android:layout_height="72dp"
                             app:layout_constraintBottom_toBottomOf="parent"
                             app:layout_constraintEnd_toEndOf="@+id/imageView6"
                             app:layout_constraintStart_toStartOf="@+id/imageView6"
@@ -142,7 +142,7 @@
                         android:id="@+id/textView78"
                         android:layout_width="116dp"
                         android:layout_height="53dp"
-                        android:text="Article"
+                        android:text="Liste des commandes"
 
                         android:textAlignment="center"
                         android:textColor="#0099ff"
