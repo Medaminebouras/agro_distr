@@ -2,26 +2,21 @@ package com.example.projet;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.cardview.widget.CardView;
-import androidx.drawerlayout.widget.DrawerLayout;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ProgressBar;
-import android.widget.Toolbar;
-
-import com.google.android.material.navigation.NavigationView;
 
 public class homapage extends AppCompatActivity {
     private int prog =0;
     Button incr;
-    CardView CardView;
-    CardView CardView2;
-    CardView CardView4 , cardview555;
-    DrawerLayout drawerLayout;
-    NavigationView navigationView;
-    Toolbar toolbar;
+
+
+    CardView CardView4 , cardview555 ,  CardView2 , CardView ,cardView3;
+
+
     ProgressBar progress_bar;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -36,6 +31,7 @@ public class homapage extends AppCompatActivity {
         CardView2 = findViewById(R.id.cardView2);
         CardView4 = findViewById(R.id.cardView4);
         cardview555 = findViewById(R.id.cardview555);
+        cardView3 = findViewById(R.id.cardView3);
         progress_bar.setProgress(0);
         incr.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -63,7 +59,7 @@ public class homapage extends AppCompatActivity {
         CardView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                openmenupage();
+                commandegenerale();
             }
         });
         CardView2.setOnClickListener(new View.OnClickListener() {
@@ -72,9 +68,15 @@ public class homapage extends AppCompatActivity {
                 openclientgenerale();
             }
         });
+        cardView3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                exit();
+            }
+        });
     }
-    public void openmenupage(){
-        Intent intent= new Intent(this,menu.class);
+    public void commandegenerale(){
+        Intent intent= new Intent(this,commande_generale.class);
         startActivity(intent);
     }
     public void openclientgenerale(){
@@ -87,6 +89,10 @@ public class homapage extends AppCompatActivity {
     }
     public void stock(){
         Intent intent= new Intent(this, stockgenerale.class);
+        startActivity(intent);
+    }
+    public void exit(){
+        Intent intent= new Intent(this, MainActivity.class);
         startActivity(intent);
     }
 }

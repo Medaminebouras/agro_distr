@@ -23,9 +23,7 @@ ImageView imageView7, imageView14;
         });
         imageView14.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View v) {
-                article();
-            }
+            public void onClick(View v) {article();}
         });
     }
     public void stock(){

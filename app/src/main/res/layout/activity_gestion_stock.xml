@@ -171,7 +171,7 @@
         app:layout_constraintTop_toBottomOf="@+id/textqte" />
 
     <EditText
-        android:id="@+id/txtmat"
+        android:id="@+id/txtprix"
         android:layout_width="300dp"
         android:layout_height="48dp"
         android:layout_marginTop="-170dp"
@@ -205,11 +205,11 @@
         app:layout_constraintBottom_toTopOf="@+id/button"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtmat"
+        app:layout_constraintTop_toBottomOf="@+id/txtprix"
         app:layout_constraintVertical_bias="0.268" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName3"
+        android:id="@+id/txtcommande"
         android:layout_width="300dp"
         android:layout_height="48dp"
         android:layout_marginBottom="40dp"
@@ -223,7 +223,7 @@
         app:layout_constraintBottom_toTopOf="@+id/button"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtmat" />
+        app:layout_constraintTop_toBottomOf="@+id/txtprix" />
 
     <TextView
         android:id="@+id/textView19"
@@ -238,7 +238,7 @@
         app:layout_constraintBottom_toTopOf="@+id/button"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName3" />
+        app:layout_constraintTop_toBottomOf="@+id/txtcommande" />
 
     <EditText
         android:id="@+id/editTextDate"

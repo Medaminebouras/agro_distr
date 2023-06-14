@@ -35,8 +35,8 @@ private Button btnajouter;
         setContentView(R.layout.activity_gestion_stock);
 
         qte= findViewById(R.id.textqte);
-        mat= findViewById(R.id.txtmat);
-        sit = findViewById(R.id.editTextTextPersonName3);
+        mat= findViewById(R.id.txtprix);
+        sit = findViewById(R.id.txtcommande);
         btnajouter = findViewById(R.id.button);
         date1 = findViewById(R.id.editTextDate);
        gammespinner = findViewById(R.id.spinner_gamme);

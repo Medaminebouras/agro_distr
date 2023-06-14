@@ -168,7 +168,7 @@
         app:layout_constraintTop_toBottomOf="@+id/textqte" />
 
     <EditText
-        android:id="@+id/txtmat"
+        android:id="@+id/txtprix"
         android:layout_width="300dp"
         android:layout_height="48dp"
         android:background="@drawable/background_text"

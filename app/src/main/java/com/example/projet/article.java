@@ -35,7 +35,7 @@ public class article extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_article);
         qte = findViewById(R.id.textqte);
-        mat = findViewById(R.id.txtmat);
+        mat = findViewById(R.id.txtprix);
 
         btnchercher = findViewById(R.id.button);
 

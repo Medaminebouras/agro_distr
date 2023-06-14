@@ -15,6 +15,12 @@
         android:theme="@style/Theme.Projet"
         tools:targetApi="31">
         <activity
+            android:name=".list_commande"
+            android:exported="false" />
+        <activity
+            android:name=".commande_generale"
+            android:exported="false" />
+        <activity
             android:name=".article"
             android:exported="false" />
         <activity
@@ -55,6 +61,9 @@
             android:exported="false" />
         <activity
             android:name=".homapage"
+            android:exported="false" />
+        <activity
+            android:name=".Commander"
             android:exported="false" />
         <activity
             android:name=".MainActivity"
