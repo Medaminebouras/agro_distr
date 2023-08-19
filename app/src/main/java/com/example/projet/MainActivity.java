@@ -63,7 +63,6 @@ public class MainActivity extends AppCompatActivity {
 
                     String postData = "code=" + URLEncoder.encode(nom, "UTF-8")
                             + "&password=" + URLEncoder.encode(password, "UTF-8");
-
                     OutputStream outputStream = conn.getOutputStream();
                     outputStream.write(postData.getBytes());
                     outputStream.flush();
