@@ -65,7 +65,6 @@ public class list_commande extends AppCompatActivity {
         // Fetch data from PHP script
         fetchData();
     }
-
     private void filterCommandes(String filterText) {
         List<String> filteredList = new ArrayList<>();
         float total = 0;
