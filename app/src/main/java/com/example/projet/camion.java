@@ -161,7 +161,7 @@ public class camion extends AppCompatActivity {
 
                         return chauffeur + ";" + vendeur + ";" + aide_vendeur;
                     } else {
-                        return "Client not found";
+                        return "camion not found";
                     }
                 } else {
                     return "HTTP error: " + responseCode;

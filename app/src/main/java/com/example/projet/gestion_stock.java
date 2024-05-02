@@ -95,6 +95,10 @@ private Button btnajouter;
              String situation = sit.getText().toString();
              String date = date1.getText().toString();
              insertData(gamme, produit, quantite,matricule,situation , date);
+             qte.setText("");
+             mat.setText("");
+             sit.setText("");
+             date1.setText("");
          }
      });
     }
@@ -135,6 +139,7 @@ private Button btnajouter;
                 } catch (Exception e) {
                     return "Error: " + e.getMessage();
                 }
+
             }
 
             @Override
@@ -146,4 +151,5 @@ private Button btnajouter;
         InsertData insertData = new InsertData();
         insertData.execute(gamme, produit, quantite, matricule, situation , date);
     }
+
 }
