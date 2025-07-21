@@ -51,7 +51,7 @@
                 @Override
                 protected String doInBackground(String... params) {
                     try {
-                        String matricule = params[0];
+                        String matricule = params[1];
                         String name = params[1];
                         String password = params[2];
                         String contact = params[3];
